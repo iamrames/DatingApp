@@ -1,6 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 import { AuthService } from './../_services/auth.service';
+import { JsonPipe } from '@angular/common';
 
 @Component({
   selector: 'app-register',
@@ -11,6 +12,7 @@ export class RegisterComponent implements OnInit {
 
   @Output() cancelRegister = new EventEmitter();
   model: any = {};
+  error;
 
   constructor(private authService: AuthService) { }
 

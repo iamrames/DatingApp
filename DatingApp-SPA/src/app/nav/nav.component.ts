@@ -29,7 +29,7 @@ export class NavComponent implements OnInit {
       console.log('logged in successfully');
     }, error => {
       localStorage.removeItem('token');
-      console.log('Failed to login');
+      console.log(error);
     });
   }
 
