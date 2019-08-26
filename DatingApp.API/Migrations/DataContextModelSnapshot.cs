@@ -47,15 +47,9 @@ namespace DatingApp.API.Migrations
 
                     b.Property<string>("Country");
 
-                    b.Property<string>("CreatedBy");
-
-                    b.Property<DateTime>("CreatedDate");
+                    b.Property<DateTime>("Created");
 
                     b.Property<DateTime>("DateOfBirth");
-
-                    b.Property<string>("DeletedBy");
-
-                    b.Property<DateTime?>("DeletedDate");
 
                     b.Property<string>("Gender");
 
@@ -63,19 +57,11 @@ namespace DatingApp.API.Migrations
 
                     b.Property<string>("Introduction");
 
-                    b.Property<bool>("IsActive");
-
-                    b.Property<bool>("IsDeleted");
-
                     b.Property<string>("KnownAs");
 
                     b.Property<DateTime>("LastActive");
 
                     b.Property<string>("LookingFor");
-
-                    b.Property<string>("ModifiedBy");
-
-                    b.Property<DateTime?>("ModifiedDate");
 
                     b.Property<byte[]>("PasswordHash");
 
