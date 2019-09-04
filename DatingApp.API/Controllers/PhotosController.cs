@@ -92,7 +92,7 @@ namespace DatingApp.API.Controllers
             return BadRequest("Could not add the photo!");
         }
 
-        [HttpPost]
+        [HttpPost("{id}/setMain")]
         public async Task<IActionResult> SetMainPhoto(int userId, int id)
         {
             if (userId != int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value))
