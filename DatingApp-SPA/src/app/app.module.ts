@@ -15,11 +15,11 @@ import { AppComponent } from './app.component';
 import { AngularFontAwesomeModule } from '../../node_modules/angular-font-awesome';
 import { HttpClientModule } from '@angular/common/http';
 import { NavComponent } from './nav/nav.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
-import { BsDropdownModule, TabsModule } from 'ngx-bootstrap';
+import { BsDropdownModule, TabsModule, BsDatepickerModule } from 'ngx-bootstrap';
 import { MemberListsComponent } from './members/member-lists/member-lists.component';
 import { ListsComponent } from './lists/lists.component';
 import { MessagesComponent } from './messages/messages.component';
@@ -54,6 +54,8 @@ export function tokenGetter() {
       TabsModule.forRoot(),
       HttpClientModule,
       FormsModule,
+      ReactiveFormsModule,
+      BsDatepickerModule.forRoot(),
       NgxGalleryModule,
       BsDropdownModule.forRoot(),
       RouterModule.forRoot(appRoutes),
