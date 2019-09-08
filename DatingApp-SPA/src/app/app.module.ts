@@ -20,7 +20,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
-import { BsDropdownModule, TabsModule, BsDatepickerModule } from 'ngx-bootstrap';
+import { BsDropdownModule, TabsModule, BsDatepickerModule, PaginationModule, ButtonsModule } from 'ngx-bootstrap';
 import { MemberListsComponent } from './members/member-lists/member-lists.component';
 import { ListsComponent } from './lists/lists.component';
 import { MessagesComponent } from './messages/messages.component';
@@ -67,6 +67,8 @@ export function tokenGetter() {
       FileUploadModule,
       BsDropdownModule.forRoot(),
       RouterModule.forRoot(appRoutes),
+      PaginationModule.forRoot(),
+      ButtonsModule.forRoot(),
       JwtModule.forRoot({
          config: {
             tokenGetter,
